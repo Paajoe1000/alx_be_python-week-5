@@ -3,7 +3,7 @@ def safe_divide(numerator, denominator):
         numerator = float(numerator)
         denominator = float(denominator)
         result = numerator / denominator
-        return f"The Result of {numerator} / {denominator} is {result:.1f}"
+        return f"The result of the {numerator} / {denominator} is {result:.1f}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     except ValueError:
