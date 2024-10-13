@@ -1,7 +1,11 @@
 class Book:
-    def __init__(self, title, author):
+
+    def __init__(self, title, author): 
         self.title = title
         self.author = author
+
+    def __str__(self):
+        return f"{self.title}, {self.author}"
 
 # Derived Classes
 class EBook(Book):
@@ -15,12 +19,12 @@ class PrintBook(Book):
 # Composition
 class Library(Book):
     def __init__(self, books):
-        self.books = books
+        self.books = []
 
     def add_book(self, book):
-        self.book = Book, EBook, PrintBook
+        self.books.append (book)
 
     def list_books(self):
-        self.book 
+        self.books() 
 
         
