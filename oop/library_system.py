@@ -13,7 +13,7 @@ class PrintBook(Book):
         self.page_count = int(page_count)
 
 # Composition
-class Library:
+class Library(Book):
     def __init__(self, books):
         self.books = books
 
